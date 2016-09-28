@@ -1,4 +1,4 @@
-# NSFilesPromisePboardType drag from NSCollectionView works on macOS Sierra, causes crash on El Capitan
+# rdar://28514083 NSFilesPromisePboardType drag from NSCollectionView works on macOS Sierra, causes crash on El Capitan
 
 Implementing drag-drop from an NSCollectionView with a NSFilesPromisePboardType causes some unexpected behaviour when used on macOS Sierra and El Capitan. The implementation that works for macOS Sierra, crashes on El Capitan.
 
