@@ -1,6 +1,8 @@
+# NSFilesPromisePboardType drag from NSCollectionView works on macOS Sierra, causes crash on El Capitan
+
 Implementing drag-drop from an NSCollectionView with a NSFilesPromisePboardType causes some unexpected behaviour when used on macOS Sierra and El Capitan. The implementation that works for macOS Sierra, crashes on El Capitan.
 
-I've used [the SlidesMagic NSCollectionView project from Ray Wendelich(https://www.raywenderlich.com/120494/collection-views-os-x-tutorial) as a base for this project.
+I've used [the SlidesMagic NSCollectionView project from Ray Wenderlich](https://www.raywenderlich.com/120494/collection-views-os-x-tutorial) as a base for this project.
 
 The project contains various setups that can be used for testing in `ViewController.swift`, [starting here](https://github.com/boyvanamstel/NSFilesPromisePboardType-NSCollectionView-crash/blob/master/SlidesMagic/ViewController.swift#L131).
 
@@ -134,3 +136,10 @@ Thread 0 Crashed:: Dispatch queue: com.apple.main-thread
 36  SlidesMagic                     0x000000010b916cb4 main + 84
 37  libdyld.dylib                   0x00007fff975f25ad start + 1
 ```
+
+## Build System Configuration
+
+OS X 10.12 Sierra (16A323)
+Xcode Version 8.0 (8A218a) & 8.1 beta (8T29o)
+2,3 GHz Intel Core i7
+16 GB 1600 MHz DDR3
