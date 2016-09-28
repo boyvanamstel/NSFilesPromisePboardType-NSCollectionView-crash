@@ -2,7 +2,7 @@ Implementing drag-drop from an NSCollectionView with a NSFilesPromisePboardType 
 
 I've used [the SlidesMagic NSCollectionView project from Ray Wendelich(https://www.raywenderlich.com/120494/collection-views-os-x-tutorial) as a base for this project.
 
-The project contains various setups that can be used for testing in `ViewController.swift`.
+The project contains various setups that can be used for testing in `ViewController.swift`, [starting here](https://github.com/boyvanamstel/NSFilesPromisePboardType-NSCollectionView-crash/blob/master/SlidesMagic/ViewController.swift#L131).
 
 ## Steps to Reproduce:
 
@@ -41,6 +41,7 @@ extension ViewController : NSCollectionViewDelegate {
   }
 
 }
+```
 
 * Compile the project and deploy it to a Mac running macOS El Capitan and one running macOS Sierra.
 
